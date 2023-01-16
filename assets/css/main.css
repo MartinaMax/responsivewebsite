@@ -1,0 +1,509 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --lightblue: #2e79c3;
+    --darkblue: #143557;
+    --darkgrey: #222222;
+    --lightgrey: #F3F3F3;
+    font-size: 16px;
+    line-height: 16px; 
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    background-color: var(--darkblue);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0.7rem;
+}
+
+h1 {
+    grid-column: 2/3;
+    font-size: 2rem;
+    padding-top: 0.4rem;
+}
+
+.fa-menu::before {
+    grid-column: 1/2;
+    content: " \f0c9 ";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.fa-user::before {
+    grid-column: 3/4;
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    
+}
+
+
+.hero {
+    color: white;
+    text-align: center;
+    font-size: 0.7rem;
+    background-image: url(../images/Polestar-5-Sneak-Peek.jpg);
+    background-size: 140%; 
+    height: 60vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    padding-top: 11rem;
+}
+
+.hero > p {
+    margin-top: 0.3rem;
+    font-size: 0.6rem;
+}
+
+h3 {
+    font-size: 0.9rem;
+    color: var(--darkblue);
+    
+}
+
+.herotext {
+    padding: 0.7rem ;
+    font-size: 0.6rem;
+}
+
+.herotext > p {
+    padding-top: 0.5rem;
+}
+
+.spacing {
+    background-color: var(--lightgrey);
+    padding: 1rem;
+}
+
+
+
+.maintext {
+    padding: 0.7rem ;
+    font-size: 0.6rem;
+}
+
+.maintext > p {
+    padding-top: 0.5rem;
+}
+
+.maintext-lightgrey{
+    background-color: var(--lightgrey);
+}
+
+.showcased_cars{
+    width: 100%;
+    margin: 0;
+}
+
+
+
+.h3-aside {
+    padding: 0.7rem 0 0 0.4rem;
+}
+
+.articles-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    margin: 0.4rem;
+}
+
+.aside-image1 {
+    width: 115%;
+    grid-row: 1;
+}
+
+.text-container1 {
+    background-color: var(--lightgrey);
+    padding: 0.5rem;
+    font-size: 0.6rem;
+    grid-column-start: 2/3;
+    grid-row: 1;
+}
+
+.aside-image2 {
+    width: 110%;
+    grid-row: 2;
+}
+
+.text-container2 {
+    background-color: var(--lightgrey);
+    padding: 0.5rem;
+    font-size: 0.6rem;
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+
+
+.h3-sbs {
+    color: var(--lightblue);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.subscribe-container {
+    text-align: center;
+}
+
+.subscribe-container > p {
+    font-size: 0.6rem;
+    margin: 0.5rem 0 1rem 0;
+}
+
+#email {
+    color: rgb(71, 71, 71);
+    font-size: 1rem;
+    text-align: center;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid var(--lightblue);
+    padding: .1rem 5rem;
+}
+
+.sbsbutton {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--lightblue);
+    padding: 0.4rem;
+    margin: 1rem 0.7rem 2rem;
+    border-radius: 5px;
+}
+
+
+
+footer {
+    background-color: var(--darkblue);
+    color:white;
+    text-align: center;
+    margin: 0;
+}
+
+.h3-footer {
+  color: white;
+  padding: 1rem 0 0.6rem 0;
+}
+
+footer > P {
+    font-size: 0.6rem;
+}
+
+.icons {
+    padding: 0.6rem 0;
+}
+
+
+.fa-twitter::before {
+    content: " \f099";
+    font-family: "Font Awesome 5 brands";
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding-right: 0.4rem;
+}
+
+.fa-pinterest::before {
+    content: "\f0d2";
+    font-family: "Font Awesome 5 brands";
+    font-size: 30px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding-right: 0.4rem;
+}
+
+.fa-facebook-square::before {
+    content: " \f082";
+    font-family: "Font Awesome 5 brands";
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+
+
+@media screen and (min-width: 600px) {
+    .hero {
+        font-size: 1rem;
+        padding-top: 16rem;
+    }
+
+    .hero > p {
+        font-size: 0.8rem;
+    }
+
+    .herotext {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+    }
+
+    .maintext {
+    padding: 1rem 2rem;
+    font-size: 0.8rem;
+    }
+
+    .maintext-lightgrey {
+    padding: 2rem 2.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 3rem;
+    }
+
+    .text-container1 {
+        font-size: 0.7rem;
+    }
+    
+    
+    .text-container2 {
+        font-size: 0.7rem;
+}
+
+.subscribe-container > p {
+    font-size: 0.7rem;
+}
+
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) {   
+    html {
+        line-height: 20px; 
+    }
+    
+    .hero {
+        font-size: 1rem;
+        width: 100%;
+        height: 60vw;
+        padding-top: 21rem;
+    }
+
+    .hero > p {
+        margin-top: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .herotext {
+        padding: 1.4rem ;
+        font-size: 0.9rem;
+    }
+    
+
+    .spacing {
+        background-color: white;
+        padding: 1rem;
+    }
+
+
+    .maintext {
+        padding: 2rem;
+        margin: 0rem 5rem 0 5rem;
+        font-size: 0.9rem;
+        background-color: var(--lightgrey);
+    }
+
+    .maintext-lightgrey {
+        margin: 0rem 5rem 7rem 5rem;
+    }
+
+    .showcased_cars{
+        padding: 1rem 5rem 0 5rem;
+    }
+
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem;
+    }
+
+    .articles-container {
+        grid-column: 1/2; 
+    }
+
+    .text-container1 {
+        font-size: 0.8rem;
+    }
+    
+    .text-container2 {
+        font-size: 0.8rem;
+    }
+
+
+    .subscribe-container {
+        grid-column: 2/3;       
+        background-color: var(--darkblue);
+       height: 44vw;
+       padding: 6rem 1rem 4rem 1rem;
+       margin: 0.4rem 0.4rem 0.4rem 0.6rem;
+    }
+
+    .h3-sbs {
+        font-size: 1.2rem;
+    }
+
+    .subscribe-container > p {
+        color: white;
+    }
+
+    #email {
+        border-bottom: 0;
+        padding: .1rem 3rem;
+    }
+
+    footer > P {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* Desktop */
+@media screen and (min-width: 1200px) { 
+
+    html {
+        line-height: 22px; 
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 10fr 1fr;
+        grid-template-rows: .1fr 11fr 1fr;
+    }
+
+    header {
+        grid-column: 1/3;
+        grid-row: 1;
+        grid-template-columns: 1fr 12fr 1fr;
+            
+    }
+
+    .hero {
+        height: 40vw;
+        background-size: 130%; 
+    }
+
+    .herotext {
+        padding: 2rem;
+        font-size: 1rem;
+    }
+
+    .main-section {
+        grid-column: 1/2;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 2rem ;
+    }
+
+    .maintext {
+        grid-column: 2/3;
+        padding: 1.5rem;
+        margin: 0 2rem 2rem 0;
+    }
+
+    .maintext-lightgrey {
+        margin: 0 2rem 2rem 0;
+    }
+
+    .showcased_cars {
+        grid-column: 1/2;
+        width: 100%;
+        padding: 0 0 0 2rem;
+        margin: 0 0 2rem 0;
+    }
+
+    aside {
+        background-color: var(--darkblue);
+        grid-column: 2/3;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2.5fr;
+        margin: 0.5rem;
+    }
+
+    .articles-container {
+        grid-column: 1/2;
+        grid-row: 1;
+        margin: 1rem;
+    }
+
+    .subscribe-container {
+        grid-column: 1/2;
+        grid-row: 2;
+        background-color: var(--lightgrey);
+        height: 20vw;
+        padding: 3rem 1rem;
+        margin: 1rem;
+    }
+
+
+    .subscribe-container > p {
+        color: var(--darkgrey);
+    }
+
+
+    footer {
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+}
+
+@media screen and (min-width: 1400px) {  
+    html{
+        line-height: 24px; 
+    }
+
+    .hero {
+       height: 45vw;
+       padding-top: 30rem;
+       font-size: 1.5rem;
+    }
+
+    .hero > p {
+        font-size: 1rem;
+    }
+
+    .maintext {
+        padding: 3rem;
+    }
+
+    .h3-sbs {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .subscribe-container > p {
+       font-size: 0.9rem;
+    }
+
+    footer > P {
+        font-size: 0.9rem;
+    }
+}
